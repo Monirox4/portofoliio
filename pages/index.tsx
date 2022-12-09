@@ -4,12 +4,12 @@ import styles from '../styles/Home.module.css'
 import  IconName, { BsFillBugFill, BsFillMoonStarsFill, BsGithub, BsHddNetwork, BsLinkedin, BsYoutube }  from 'react-icons/bs'
 import { DiCodeBadge} from "react-icons/di"
 import software from "../public/software.png"
-import web1 from "../public/web1.jpg"
-import web2 from "../public/web2.jpg"
-import web3 from "../public/web3.jpg"
-import web4 from "../public/web4.jpg"
-import web5 from "../public/web5.jpg"
-import web6 from "../public/web6.jpg"
+import web1 from "../public/Web1.jpg"
+import web2 from "../public/Web2.jpg"
+import web3 from "../public/Web3.jpg"
+import web4 from "../public/Web4.jpg"
+import web5 from "../public/Web5.jpg"
+import web6 from "../public/Web6.jpg"
 
 import { useState } from "react"
 
