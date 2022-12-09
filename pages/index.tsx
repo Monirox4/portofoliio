@@ -4,12 +4,7 @@ import styles from '../styles/Home.module.css'
 import  IconName, { BsFillBugFill, BsFillMoonStarsFill, BsGithub, BsHddNetwork, BsLinkedin, BsYoutube }  from 'react-icons/bs'
 import { DiCodeBadge} from "react-icons/di"
 import software from "../public/software.png"
-import web1 from "../public/Web1.jpg"
-import web2 from "../public/Web2.jpg"
-import web3 from "../public/Web3.jpg"
-import web4 from "../public/Web4.jpg"
-import web5 from "../public/Web5.jpg"
-import web6 from "../public/Web6.jpg"
+
 
 import { useState } from "react"
 
@@ -114,27 +109,7 @@ export default function Home() {
             
           </p>
         </div>
-        <div className=' grid grid-cols-2 gap-4 place-content-center '>
-        <div className='basis-1/2 dark:bg-white'>
-        <Image src={web1}  alt={''} className='rounded-lg object-cover' width={'700'} height={'700'} />
-        </div>
-        <div className='basis-1/2 flex-1 dark:bg-white'>
-        <Image src={web2}  alt={''} className='rounded-lg object-cover' width={'700'} height={'700'} />
-        </div>
-        <div className='basis-1/2 flex-1 dark:bg-white'>
-        <Image src={web3}  alt={''} className='rounded-lg object-cover' width={'700'} height={'700'} />
-        </div>
-        <div className='basis-1/2 flex-1 dark:bg-white'>
-        <Image src={web4}  alt={''} className='rounded-lg object-cover' width={'700'} height={'700'} />
-        </div>
-        <div className='basis-1/2 flex-1 dark:bg-white'>
-        <Image src={web5}  alt={''} className='rounded-lg object-cover' width={'700'} height={'700'} />
-        </div>
-        <div className='basis-1/2 flex-1 dark:bg-white'>
-        <Image src={web6}  alt={''} className='rounded-lg object-cover' width={'700'} height={'700'} />
-        </div>
-
-        </div>
+       
        </section>
       </main>
 
