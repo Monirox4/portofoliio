@@ -7,12 +7,40 @@ import software from "../public/software.png"
 import fiver from "../public/fiver.png"
 import upwork from "../public/upwork.png"
 import freelance from "../public/freelance.png"
-import { useState } from "react"
+import dh from "../public/dh.png"
 
+import { useState ,useEffect } from "react"
+import { db } from "../public/firebase-config";
+import {
+  collection,
+  getDocs,
+  addDoc,
+} from "firebase/firestore";
 
 
 export default function Home() {
-  const [darkMode,setDarkMode] = useState(false)
+  const [darkMode,setDarkMode] = useState(false);
+  const [newMail, setnewMail] = useState("");
+  const [newDescription, setNewDescription] = useState("");
+  const [project, setProject] = useState([]);
+  const projectCollectionRef = collection(db, "project");
+
+  const createUser = async () => {
+    await addDoc(projectCollectionRef, { mail: newMail, description: newDescription });
+    
+    
+  };
+
+  useEffect(() => {
+    const getProject = async () => {
+      const data = await getDocs(projectCollectionRef);
+      console.log(data);
+      
+      //setProject(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    };
+
+    getProject();
+  }, []);
   return (
     <div className={darkMode ? "dark" :" "}>
       <Head>
@@ -103,6 +131,7 @@ export default function Home() {
         </div>
        </section>
        <section>
+        
         <div className='text-center p-10'>
           <h3 className='text-3xl py-1 dark:bg-white'>Portofolio</h3>
           <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:bg-white'>
@@ -125,9 +154,111 @@ export default function Home() {
         <Image src={freelance} alt={''} width={100} height={100}  />
           </a>
         </div>
-
+        <div><a href="https://www.designhill.com/member/moonirbootchamir/services">
+        <Image src={dh} alt={''} width={100} height={100}  />
+          </a>
+        </div>
         </div>
        </section>
+       
+       
+
+
+<div className="flex justify-center">
+  <div className="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+    <div className="py-3 px-6 border-b border-gray-300">
+      Contact me
+    </div>
+    <div className="p-6">
+      <h5 className="text-gray-900 text-xl font-medium mb-2">What can I do to better serve your needs?  </h5>
+           <div className="flex justify-center">
+  <div className="mb-3 xl:w-96">
+    <label htmlFor="exampleEmail0" className="form-label inline-block mb-2 text-gray-700"
+      >Email </label
+    >
+    <input
+      type="email"
+      className="
+        form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+      "
+      id="exampleEmail0"
+      placeholder="Email "
+      onChange={(event) => {
+        setnewMail(event.target.value);
+      }}
+    />
+  </div>
+</div>
+
+<div className="flex justify-center">
+  <div className="mb-3 xl:w-96">
+    <label htmlFor="exampleFormControlTextarea1" className="form-label inline-block mb-2 text-gray-700"
+      >Description</label
+    >
+    <textarea
+      className="
+        form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+      "
+      id="exampleFormControlTextarea1"
+     
+      placeholder="Your message"
+      onChange={(event) => {
+        setNewDescription(event.target.value);
+      }}
+    ></textarea>
+  </div>
+</div>
+
+
+<div className="flex space-x-2 justify-center">
+  <div>
+    <button onClick={createUser} type="button" className="inline-block px-6 pt-2.5 pb-2 bg-blue-600 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-center">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download"
+        className="w-3 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+        </path>
+      </svg>
+      Send it
+    </button>
+  </div>
+</div>
+    </div>
+    
+    <div className="py-3 px-6 border-t border-gray-300 text-gray-600">
+      Thank you 
+    </div>
+  </div>
+</div>
+
       </main>
 
 
