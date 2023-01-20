@@ -34,7 +34,7 @@ export default function Home() {
   useEffect(() => {
     const getProject = async () => {
       const data = await getDocs(projectCollectionRef);
-      console.log(data);
+      
       
       //setProject(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
@@ -240,7 +240,7 @@ export default function Home() {
 
 <div className="flex space-x-2 justify-center">
   <div>
-    <button onClick={createUser} type="button" className="inline-block px-6 pt-2.5 pb-2 bg-blue-600 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-center">
+    <button onClick={() => {createUser(); alert("You sent your message ");}} type="button" className="inline-block px-6 pt-2.5 pb-2 bg-blue-600 text-white font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out align-center">
       <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download"
         className="w-3 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path fill="currentColor"
