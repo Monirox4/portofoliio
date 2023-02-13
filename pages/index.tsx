@@ -10,6 +10,7 @@ import freelance from "../public/freelance.png"
 import dh from "../public/dh.png"
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { useState ,useEffect } from "react"
+import MediaComponent from './MediaPlayerComponent';
 import { db } from "../public/firebase-config";
 import {
   collection,
@@ -112,6 +113,10 @@ export default function Home() {
         </div>
         <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-100 h-100 mt-100 overflow-hidden md:h-200 md:w-96'>
           <Image src={software} alt={''}  />
+          
+        </div>
+        <div className="flex space-x-2 justify-center">
+        <MediaComponent />
         </div>
         </section>
        <section>
