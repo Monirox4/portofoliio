@@ -100,7 +100,7 @@ export default function Home() {
         </nav>
         <div className='text-center p-10 '>
           <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>BOUTCHAMIR Mounir</h2>
-          <h3 className='text-2xl py-2 md:text-3xl dark:bg-white'>Software Engeneer</h3>
+          <h3 className='text-2xl py-2 md:text-3xl dark:bg-white'>Software Enineer</h3>
           <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:bg-white'>
             I'm a freelancer providing services for network equipements, doing Full-stack programming and RPA.
             It will be a pleasure to work together to make your project a reality.  
@@ -150,7 +150,7 @@ export default function Home() {
           Programming Language to develop from scratch. Scripting Language  to combine existing components.
           </p>
           <h4 className='py-4 text-teal-600'>Tools I use</h4>
-          <p className='text-gray-800 py-1'>DEVops</p>
+          <p className='text-gray-800 py-1'>DevOps</p>
           <p className='text-gray-800 py-1'>Angular</p>
           <p className='text-gray-800 py-1'>React</p>
           </div>
