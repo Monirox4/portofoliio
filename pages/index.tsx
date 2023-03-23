@@ -187,10 +187,10 @@ export default function Home() {
      
 
 
-<div itemScope itemType='http://schema.org/Person' className='fiverr-seller-widget' style={{display: 'inline-block'}}>
-     <link itemProp='url' href="https://www.fiverr.com/mounirboutchami" rel="nofollow"  style={{display: 'inline-block'}} />
-        <div className='fiverr-seller-content'  id='fiverr-seller-widget-content-b7189642-38fe-4723-94f9-daf62de35ddd' itemProp='contentURL' style={{display: 'none'}}></div>
-        <div id='fiverr-widget-seller-data' style={{display: 'none'}}>
+<div itemScope itemType='http://schema.org/Person' className='fiverr-seller-widget' >
+     <link itemProp='url' href="https://www.fiverr.com/mounirboutchami" rel="nofollow"   />
+        <div className='fiverr-seller-content'  id='fiverr-seller-widget-content-b7189642-38fe-4723-94f9-daf62de35ddd' itemProp='contentURL' ></div>
+        <div id='fiverr-widget-seller-data' >
             <div itemProp='name' >mounirboutchami</div>
             <div itemScope itemType='http://schema.org/Organization'><span itemProp='name'>Fiverr</span></div>
             <div itemProp='jobtitle'>Seller</div>
