@@ -185,15 +185,38 @@ export default function Home() {
           </a>
         </div>
      
+
+
+<div itemScope itemType='http://schema.org/Person' className='fiverr-seller-widget' >
+     <a itemProp='url' href="https://www.fiverr.com/mounirboutchami" rel="nofollow" target="_blank" >
+        <div className='fiverr-seller-content' id='fiverr-seller-widget-content-b7189642-38fe-4723-94f9-daf62de35ddd' itemProp='contentURL' ></div>
+        <div id='fiverr-widget-seller-data' >
+            <div itemProp='name' >mounirboutchami</div>
+            <div itemScope itemType='http://schema.org/Organization'><span itemProp='name'>Fiverr</span></div>
+            <div itemProp='jobtitle'>Seller</div>
+            <div itemProp='description'> I am a software engineer since 2020 working as a system administrator with 3 years (2020,2021,2022) experience working in startups, a large company and as an independent. 
+Do not hesitate to contact me I provide the following services:
+🎯Creation of a full-stack professional web application in React, Next JS and Node JS.
+Deploy and manage web applications in AWS on EC2, AWS Lambda, work with S3 and more or any recommended server. 
+🎯Provide you with a complete Back-End web application using REACT or Angular and springboot 
+</div>
+        </div>
+    </a>
+</div>
+
+<script id='fiverr-seller-widget-script-b7189642-38fe-4723-94f9-daf62de35ddd' src='https://widgets.fiverr.com/api/v1/seller/mounirboutchami?widget_id=b7189642-38fe-4723-94f9-daf62de35ddd' data-config='{"category_name":"\n                                    Programming \u0026 Tech\n\n                            "}' ></script>
+
+<div><a href="https://www.freelancer.com/u/moonirbootchamir">
+        <Image src={freelance} alt={''} width={100} height={100}  />
+          </a>
+        </div>
+
         <div><a href="https://www.upwork.com/freelancers/~01fab3f849b6c6e482?viewMode=1">
         <Image src={upwork} alt={''} width={100} height={100}  />
           </a>
         </div>
 
-        <div><a href="https://www.freelancer.com/u/moonirbootchamir">
-        <Image src={freelance} alt={''} width={100} height={100}  />
-          </a>
-        </div>
+       
         <div><a href="https://www.designhill.com/member/moonirbootchamir/services">
         <Image src={dh} alt={''} width={100} height={100}  />
           </a>
