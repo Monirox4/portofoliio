@@ -187,10 +187,10 @@ export default function Home() {
      
 
 
-<div itemScope itemType='http://schema.org/Person' className='fiverr-seller-widget' >
-     <link itemProp='url' href="https://www.fiverr.com/mounirboutchami" rel="nofollow"   />
-        <div className='fiverr-seller-content'  id='fiverr-seller-widget-content-b7189642-38fe-4723-94f9-daf62de35ddd' itemProp='contentURL' ></div>
-        <div id='fiverr-widget-seller-data' >
+<div itemScope itemType='http://schema.org/Person' className='fiverr-seller-widget' style={{display: 'inline-block'}}>
+     <link itemProp='url' href="https://www.fiverr.com/mounirboutchami" rel="nofollow"   style={{display: 'inline-block'}}/>
+        <div className='fiverr-seller-content'  id='fiverr-seller-widget-content-b7189642-38fe-4723-94f9-daf62de35ddd' itemProp='contentURL' style={{display: 'none'}}></div>
+        <div id='fiverr-widget-seller-data' style={{display: 'none'}}>
             <div itemProp='name' >mounirboutchami</div>
             <div itemScope itemType='http://schema.org/Organization'><span itemProp='name'>Fiverr</span></div>
             <div itemProp='jobtitle'>Seller</div>
@@ -204,7 +204,7 @@ Deploy and manage web applications in AWS on EC2, AWS Lambda, work with S3 and m
     
 </div>
 
-<script id='fiverr-seller-widget-script-b7189642-38fe-4723-94f9-daf62de35ddd' src='https://widgets.fiverr.com/api/v1/seller/mounirboutchami?widget_id=b7189642-38fe-4723-94f9-daf62de35ddd' data-config='{"category_name":"\n                                    Programming \u0026 Tech\n\n                            "}' ></script>
+<script id='fiverr-seller-widget-script-e168a91a-a5f4-4eaa-b1d3-77ed9feac679' src='https://widgets.fiverr.com/api/v1/seller/mounirboutchami?widget_id=e168a91a-a5f4-4eaa-b1d3-77ed9feac679' data-config='{"category_name":"Programming \u0026 Tech"}' dangerouslySetInnerHTML={{__html: 'try{Typekit.load({ async: true });}catch(e){}'}} defer></script>
 
 <div><a href="https://www.freelancer.com/u/moonirbootchamir" target="_blank">
         <Image src={freelance} alt={''} width={100} height={100}  />
